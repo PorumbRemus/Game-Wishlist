@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Main Borderpane start -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wishlist.wishlist.LoginController">
+
+   <!-- Beginning of the left part of the Borderpane -->
+   <left>
+
+      <!-- An AnchorPane in the Left BorderPane -->
+      <AnchorPane fx:id="loginPane" prefHeight="700.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+
+            <!-- Logo -->
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="335.0" style="-fx-background-color: transparent;" text="Wishlist" textFill="#e8c8c8">
+               <font>
+                  <Font name="Old English Text MT" size="60.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <!-- Ending of the right part of the Borderpane -->
+
+   <!-- Beginning of the bottom part of the Borderpane -->
+   <bottom>
+
+
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="signupLabel" layoutX="167.0" layoutY="332.0" prefHeight="25.0" prefWidth="265.0" textFill="#5aa1f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="15.0" style="-fx-background-color: transparent; -fx-text-fill: #24a0ed;" text="CREATE YOUR WISHLIST NOW" underline="true">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="CancelButton" layoutX="502.0" layoutY="13.0" mnemonicParsing="false" onAction="#cancelButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #A9A9A9; -fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" text="Cancel">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="100.0" layoutX="18.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cart.png" />
+               </image></ImageView>
+            <Label layoutX="252.0" layoutY="65.0" style="-fx-text-fill: #5AA1F5;" text="Login">
+               <font>
+                  <Font name="Georgia" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameTextField" layoutX="150.0" layoutY="120.0" prefHeight="30.0" prefWidth="300.0" promptText="Username" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="enterPasswordField" layoutX="151.0" layoutY="182.0" prefHeight="25.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font></PasswordField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LoginButton" layoutX="269.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginButtonAction" style="-fx-background-color: #24a0ed; -fx-text-fill: White; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Login">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Line endX="500.0" endY="380.0" fill="#6b6b6b" layoutX="-1.0" layoutY="-88.0" startX="100.0" startY="380.0" stroke="#a8a8a8" style="-fx-fill: #a9a9a9;" />
+            <Label layoutX="237.0" layoutY="297.0" style="-fx-text-fill: #5AA1F5;" text="Sign Up">
+               <font>
+                  <Font name="Georgia" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userSignUp" layoutX="149.0" layoutY="466.0" prefHeight="30.0" prefWidth="300.0" promptText="Username" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordSignUp" layoutX="149.0" layoutY="519.0" prefHeight="25.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signupButton" layoutX="233.0" layoutY="642.0" mnemonicParsing="false" onAction="#signupButtonAction" prefHeight="35.0" prefWidth="133.0" style="-fx-background-color: #24a0ed; -fx-text-fill: White; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;" text="Sign Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="repeatPassword" layoutX="149.0" layoutY="572.0" prefHeight="25.0" prefWidth="300.0" promptText="Repeat Password" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </PasswordField>
+            <CheckBox layoutX="161.0" layoutY="615.0" mnemonicParsing="false" style="-fx-text-fill: #A9A9A9;" text="I have read the Terms and Conditions">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="loginMessageLabel" layoutX="193.0" layoutY="217.0" textFill="RED">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnameField" layoutX="149.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" promptText="Firstname" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastnameField" layoutX="149.0" layoutY="413.0" prefHeight="30.0" prefWidth="300.0" promptText="Lastname" style="-fx-border-width: 2; -fx-border-color: #A9A9A9; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="110.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@users.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="confirmLabel" layoutX="454.0" layoutY="573.0" prefHeight="25.0" prefWidth="131.0" textFill="#c30606">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="takenUser" layoutX="454.0" layoutY="469.0" prefHeight="25.0" prefWidth="131.0" textFill="#c30606">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+   <!-- Ending of the bottom part of the Borderpane -->
+
+</BorderPane>
